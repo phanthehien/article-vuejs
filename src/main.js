@@ -3,18 +3,13 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import articles from './core/SeedDB';
 
 Vue.config.productionTip = false;
 
-console.log('articles', articles);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>',
-  data: {
-    articles,
-  },
 });
